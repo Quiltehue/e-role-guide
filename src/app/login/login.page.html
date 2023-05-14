@@ -1,11 +1,22 @@
-<ion-header>
+<ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>Iniciar sesión</ion-title>
-    <ion-button expand="block" color="success">Iniciar sesión como trabajador</ion-button>
-    <ion-button expand="block" color="warning">Iniciar sesión como gerente</ion-button>
-    <ion-button expand="block" color="danger">Iniciar sesión como administrador</ion-button>
+    <ion-title>
+      <ion-icon name="logo-amplify"></ion-icon>
+      APP Login
+    </ion-title>
   </ion-toolbar>
 </ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 3</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+
+    <ion-img src="../../assets/img/logo.png" ></ion-img>
 
 <ion-content>
   <ion-item>
@@ -16,5 +27,27 @@
     <ion-input placeholder="Contraseña" type="password"></ion-input>
   </ion-item>
 
-  <ion-button expand="block" color="primary">Iniciar sesión</ion-button>
+  <ion-button routerLink="/tab2" expand="block" color="secondary">Iniciar sesión como Colaborador</ion-button>
+    <ion-button routerLink="/tab3" expand="block" color="secondary">Iniciar sesión como RR.HH</ion-button>
+    <ion-button routerLink="/tab4" expand="block" color="secondary">Iniciar sesión como Supervisor</ion-button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <ion-button routerLink="/tab1" expand="block" color="tertiary">Registrarse</ion-button>
+    <br>
+    <br>
+    <br>
+    <br>
+   <p style="text-align:center"><i> "Plataforma de capacitación y gestión de cursos e-learning" </i></p>
+
+    
+
+
+
+
+
 </ion-content>
+
+
+

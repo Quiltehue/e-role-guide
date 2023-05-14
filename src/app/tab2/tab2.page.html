@@ -1,38 +1,72 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      <ion-icon name="logo-amplify"></ion-icon>
-      APP ERoleGuide
+      <ion-icon name="people-outline"></ion-icon>
+      Vista Colaborador
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
+    
   </ion-header>
 
-  <ion-content>
+  <ion-tabs>
 
-    <ion-img src="https://escuelapsicologiaonline.es/wp-content/uploads/2021/01/banner-cursos.jpg"></ion-img>
-
-    <ion-title>Iniciar Sesión</ion-title>
-    <ion-item>
-      <ion-input placeholder="Correo electrónico" type="email"></ion-input>
-    </ion-item>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Curso Ionic 1</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        <iframe width="60%" height="270" src="https://couponos.me/wp-content/uploads/Ionic-6-with-NodeJs-Complete-Beginner-to-Pro-Course-2022.jpg" frameborder="0" allowfullscreen></iframe>
+      </ion-card-content>
+    
+      <ion-item>
+        <ion-icon name="person-circle-outline" slot="start"></ion-icon>
+        <ion-label>Nombre del instructor: Juan Pérez</ion-label>
+      </ion-item>
+    
+      <ion-button expand="block" href="https://www.youtube.com/watch?v=g05fPJezC-w">Ver curso en Youtube</ion-button>
+    </ion-card>
   
-    <ion-item>
-      <ion-input placeholder="Contraseña" type="password"></ion-input>
-    </ion-item>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Curso Ionic 2</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        <iframe width="60%" height="270" src="https://couponos.me/wp-content/uploads/Ionic-6-with-NodeJs-Complete-Beginner-to-Pro-Course-2022.jpg" frameborder="0" allowfullscreen></iframe>
+      </ion-card-content>
+    
+      <ion-item>
+        <ion-icon name="person-circle-outline" slot="start"></ion-icon>
+        <ion-label>Nombre del instructor: Juan Pérez</ion-label>
+      </ion-item>
+    
+      <ion-button expand="block" href="https://www.youtube.com/watch?v=M5t2RB7nDCE">Ver curso en Youtube</ion-button>
+    </ion-card>
+    
+
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="tab1">
+        <ion-icon aria-hidden="true" name="book-outline"></ion-icon>
+        <ion-label>Cursos</ion-label>
+      </ion-tab-button>
   
-    <ion-button expand="block" color="primary">Iniciar sesión</ion-button>
-    <ion-button expand="block" color="primary">Iniciar sesión Google</ion-button>
-    <ion-button expand="block" color="primary">Iniciar sesión Facebook</ion-button>
-  </ion-content>
-
-
+      <ion-tab-button tab="tab2">
+        <ion-icon aria-hidden="true" name="school-outline"></ion-icon>
+        <ion-label>Certamenes</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="tab3">
+        <ion-icon aria-hidden="true" name="analytics-outline"></ion-icon>
+        <ion-label>Metricas</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  
+  </ion-tabs>
+  
+ 
 </ion-content>
-
-<ion-button expand="block" color="primary">Registrarse</ion-button>

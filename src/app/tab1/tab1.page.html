@@ -2,7 +2,8 @@
   <ion-toolbar>
     <ion-title>
       <ion-icon name="logo-amplify"></ion-icon>
-          APP ERoleGuide
+      APP Registro
+          
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -22,9 +23,10 @@
 
   <ion-content>
 
-    <ion-img src="https://escuelapsicologiaonline.es/wp-content/uploads/2021/01/banner-cursos.jpg"></ion-img>
+    <ion-img src="../../assets/img/logo.png" ></ion-img>
+    
 
-    <ion-title>Iniciar Sesión</ion-title>
+ 
     <ion-item>
       <ion-input placeholder="Correo electrónico" type="email"></ion-input>
     </ion-item>
@@ -32,17 +34,32 @@
     <ion-item>
       <ion-input placeholder="Contraseña" type="password"></ion-input>
     </ion-item>
+
+    <ion-item>
+     Perfil &nbsp;&nbsp;&nbsp;&nbsp;<select name="combo">
+        <!-- Opciones de la lista -->
+        <option value="1" selected>Colaborador</option>
+        <option value="2" >RR.HH</option> <!-- Opción por defecto -->
+        <option value="3">Supervisor</option>
+      </select>
+    </ion-item>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <ion-button expand="block" color="primary">Registrarse</ion-button>
   
-    <ion-button expand="block" color="primary">Iniciar sesión</ion-button>
-    <ion-button expand="block" color="primary">Iniciar sesión Google</ion-button>
-    <ion-button expand="block" color="primary">Iniciar sesión Facebook</ion-button>
+    
+    
   </ion-content>
 
 
-    
+
  
 
  
 </ion-content>
 
-<ion-button expand="block" color="primary">Registrarse</ion-button>
+
